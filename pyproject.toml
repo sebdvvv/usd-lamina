@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usd-lamina"
+version = "0.1.0"
+description = "Compose, inspect, diagnose, and edit layered OpenUSD stages."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "usd-lamina contributors"}]
+keywords = ["usd", "openusd", "lamina", "layer", "dcc"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: X11 Applications :: Qt",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics :: 3D Modeling",
+]
+dependencies = [
+  "PySide6>=6.5",
+]
+
+[project.optional-dependencies]
+pyside2 = ["PySide2>=5.15"]
+
+[project.scripts]
+usd-lamina = "usd_lamina:main"
+
+[project.urls]
+Homepage = "https://github.com/"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+usd_lamina = ["resources/*"]
