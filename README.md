@@ -9,6 +9,8 @@ sublayers / references / payloads, browse prims, attributes, materials, and a
 2D scene map, then save or export flattened, referenced, payload, or packed
 layered USDA.
 
+<img width="1045" height="702" alt="2026-11-03_14-24-12" src="https://github.com/user-attachments/assets/9e9880d9-564c-42b6-8ba1-a0df0f338dbf" />
+
 ## Requirements
 
 - **Python 3.11+**
